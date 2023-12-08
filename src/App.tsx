@@ -2,8 +2,10 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { countries } from "./data";
+import { CountryItem } from "./ContryItem";
+import { CountryPictrue } from "./CountryPictrue";
 
-type countryType = {
+export type countryType = {
   name: string;
   language: string;
   area: number; // in km²
@@ -13,29 +15,24 @@ type countryType = {
   biggestCities: string[];
 };
 
-const country: countryType = {
-  name: "Australia",
-  language: "English",
-  area: 7692024, // in km²
-  capital: "Canberra",
-  continent: "Oceania",
-  hasSeaAccess: true,
-  biggestCities: ["Sydney", "Melbourne", "Brisbane"],
-};
+// @ts-ignore
 
 function App() {
   return (
     <div>
       <h1>Lista krajów</h1>
+      {countries.map((country) => (
+        <CountryPictrue url={country.image} name={country.name} />
+      ))}
+
       <div>
-        <h2>Dane kraju: </h2>
-        <li>Nazwa : {country.name}</li>
-        <li>Powierzchnia : {country.area}</li>
-        <li>Język : {country.language}</li>
-        <li>Stolica : {country.capital}</li>
-        <li>Dostęp do morza : {country.hasSeaAccess ? "tak" : "nie"}</li>
-        <li>Największe miasta: {country.biggestCities.join(", ")}</li>
+        <h2>{countries[0].name}</h2>
+        <img src={countries[0].image} height={150} />
       </div>
+
+      {countries.map((country) => (
+        <CountryItem c={country} />
+      ))}
     </div>
   );
 }

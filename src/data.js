@@ -5,7 +5,8 @@ export const countries =   [  {
     capital: "Brasília",
     continent: "South America",
     hasSeaAccess: true,
-    biggestCities: ["São Paulo", "Rio de Janeiro", "Brasília"]
+    biggestCities: ["São Paulo", "Rio de Janeiro", "Brasília"],
+    image: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 },
 {
     name: "Canada",
@@ -14,7 +15,8 @@ export const countries =   [  {
     capital: "Ottawa",
     continent: "North America",
     hasSeaAccess: true,
-    biggestCities: ["Toronto", "Montreal", "Vancouver"]
+    biggestCities: ["Toronto", "Montreal", "Vancouver"],
+    image: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=2011&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 },
 {
     name: "China",
@@ -23,7 +25,8 @@ export const countries =   [  {
     capital: "Beijing",
     continent: "Asia",
     hasSeaAccess: true,
-    biggestCities: ["Shanghai", "Beijing", "Chongqing"]
+    biggestCities: ["Shanghai", "Beijing", "Chongqing"],
+    image: "https://images.unsplash.com/photo-1508804052814-cd3ba865a116?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 },
 {
     name: "Egypt",
@@ -32,7 +35,8 @@ export const countries =   [  {
     capital: "Cairo",
     continent: "Africa",
     hasSeaAccess: true,
-    biggestCities: ["Cairo", "Alexandria", "Giza"]
+    biggestCities: ["Cairo", "Alexandria", "Giza"],
+    image:"https://images.unsplash.com/photo-1539768942893-daf53e448371?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 },
 {
     name: "France",
